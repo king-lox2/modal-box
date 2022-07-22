@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+ background-color:#fff;
+ width:16rem;
+ height:15rem;
+ border:1px solid #222;
+ border-radius:0.25rem;
+  box-shadow:  0 4px 6px -1px;
+
+}
+
+.title{
+  text-shadow:0.8px 1px gray;
+  color:#3f3f46;
+  text-transform: uppercase;
+}
+
+#sect{
+  background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  min-height:100vh;
+}
+
+
+.article{
+   position: fixed;
+   top:0;
+   left:0;
+background:#a3a3a3;
+}
+
+.modal-container {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+   background-color:#ffffff;
+  top:50%;
+  left:50%;
+  width:93% ;
+  height:95%;
+ transform:translate(-50%,-50%);
+ border:1px solid #222;
+ border-radius:0.25rem;
+  box-shadow:  0 4px 6px -1px ;
+  overflow: scroll;
+  overscroll-behavior: contain;
+  visibility: hidden;
+ 
+}
+
+.show-modal{
+  visibility:visible;
+}
+
+
+.text{
+  margin:0 0 3rem 0;
+  font-family: Sans-Serif;
+  letter-spacing:1px;
+  
+}
+
+.open-modal{
+  padding:0.3rem 0.5rem 0.3rem 0.5rem;
+  margin-top:3rem;
+  font-family:Monospace;
+  background-color: transparent;
+  border:1px solid gray;
+  letter-spacing:1px;
+  border-radius:0.17rem;
+  transition:0.5s ease-in;
+}
+
+.close-modal{
+  padding:0.3rem 0.5rem 0.3rem 0.5rem;
+  background-color: transparent;
+  border:none;
+  border-radius:0.17rem;
+}
+
+.logo{
+  font-family: cursive;
+  text-shadow:0.5px 0.8px gray;
+  letter-spacing: 1px;
+  color: #3b82f6;
+  font-size:1.6rem;
+}
+
+.icon{
+  font-size:2rem;
+}
+
+.heart{
+  font-size:0.5rem;
+}
+
+.heart1{
+  font-size:2rem ;
+  color:crimson;
+}
+
+.headers{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem;
+}
+
+.open-modal:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+
+@media screen and (min-width:800px){
+.container{
+  width:30rem;
+  height:23rem;
+}
+.modal-container{
+  width:28rem;
+  height:21rem;
+}
+
+.logo{
+  font-size:2rem ;
+}
+
+.icon{
+  font-size:2rem;
+}
+  
+}
